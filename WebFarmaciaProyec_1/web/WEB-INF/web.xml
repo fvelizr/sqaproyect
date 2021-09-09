@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Controlador</servlet-name>
+        <servlet-class>controlador.Controlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CtrlVenta</servlet-name>
+        <servlet-class>controlador.CtrlVenta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CtrlContraseña</servlet-name>
+        <servlet-class>controlador.CtrlContraseña</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CtrlCompra</servlet-name>
+        <servlet-class>controlador.CtrlCompra</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controlador</servlet-name>
+        <url-pattern>/Controlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CtrlVenta</servlet-name>
+        <url-pattern>/CtrlVenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CtrlContraseña</servlet-name>
+        <url-pattern>/CtrlContrase_a</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CtrlCompra</servlet-name>
+        <url-pattern>/CtrlCompra</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
