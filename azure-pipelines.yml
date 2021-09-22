@@ -18,3 +18,10 @@ steps:
     echo See https://aka.ms/yaml
     echo see gh repo clone fvelizr/sqaproyect
   displayName: 'Run a multi-line script'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '**/*.jar'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
+    preserveTimestamp: true
